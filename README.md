@@ -102,3 +102,8 @@ echo https://node.nesa.ai/nodes/$PUB_KEY
 ```
 ![image](https://github.com/user-attachments/assets/1c33ea05-6d59-4c7e-a061-76324b2e0134)
 
+
+## Tokenomic:
+The $NES token will be launched on the mainnet network, and 8.8% of it will be airdropped to the incentivized testnet participants.
+
+![GMpSQF5XAAABwMI](https://github.com/user-attachments/assets/a3bb334d-a55a-41f8-9a04-a333444e04fe)
