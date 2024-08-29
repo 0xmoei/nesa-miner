@@ -45,6 +45,11 @@ sudo usermod -aG docker $USER
 
 5. Copy the generated key to use it in your miner installation.
 
+## Obtain LeapWallet privatekey
+We need a cosmos wallet (LeapWallet) private key
+
+![Screenshot_1](https://github.com/user-attachments/assets/876ae952-fb94-4f89-800d-6ca25631ca44)
+
 ## Open Ports
 ```console
 sudo ufw allow ssh
@@ -57,13 +62,13 @@ sudo ufw enable
 ```
 bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootstrap.sh)
 ```
-* Select amode: Choose **Wizardy**.
-* Choose a Moniker: Provide a unique name for your node.
-* hostname: skip & press `Enter`
-* hostname: skip & press `Enter`
-* Enter Referral Code: `3A5MYLii7HTTG5CtTrUUWVoVJSwUqiEqFV6gbkHcJXJc`
-* Node Type: Select Miner
-* Provide Wallet Private Key: Enter your wallet private key for miner registration and to receive rewards.
+* **Select a mode**: Choose **Wizardy**.
+* **Choose a Moniker**: Provide a unique name for your node.
+* **Node hostname**: skip & press `Enter`.
+* **Node email**: skip & press `Enter`.
+* **Enter Referral Code**: `3A5MYLii7HTTG5CtTrUUWVoVJSwUqiEqFV6gbkHcJXJc`
+* **Node Type**: Select Miner.
+* **Wallet Private Key**: Enter your wallet private key for miner registration and to receive rewards.
 * Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before proceeding.
 
 ### Get node peer-id (wallet public key)
