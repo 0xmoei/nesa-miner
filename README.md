@@ -4,13 +4,13 @@
 > GPU is not necessary and you can run your miner CPU-only
 
 
-## Install Dependecies
-### Install dependecies
+## Step 1: Install Dependecies
+### 1. Install dependecies
 ```console
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
 ```
-### Install Docker
+### 2. Install Docker
 ```console
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install ca-certificates curl
@@ -34,7 +34,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 
-## Obtain a Hugging Face API key
+##  Step 2: Obtain a Hugging Face API key
 1. Visit the [Hugging Face website](https://huggingface.co/).
 
 2. Sign up or log in to your account.
@@ -50,7 +50,7 @@ We need a cosmos wallet (LeapWallet) private key
 
 ![Screenshot_1](https://github.com/user-attachments/assets/876ae952-fb94-4f89-800d-6ca25631ca44)
 
-## Open Ports
+##  Step 3: Open Ports
 ```console
 sudo ufw allow ssh
 sudo ufw allow 22
@@ -58,7 +58,7 @@ sudo ufw allow 31333
 sudo ufw enable
 ```
 
-## Install and run Nesa Miner
+##  Step 4: Install and run Nesa Miner
 ```
 bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootstrap.sh)
 ```
@@ -73,7 +73,7 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 
 ![image](https://github.com/user-attachments/assets/69540b5a-1461-41a4-8a20-6efe4d5686f7)
 
-## Useful commands
+##  Step 5: Useful commands
 
 ### Check container logs
 ```
