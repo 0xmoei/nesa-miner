@@ -46,7 +46,7 @@ sudo usermod -aG docker $USER
 5. Copy the generated key to use it in your miner installation.
 
 ## Step 3: Obtain LeapWallet privatekey
-We need a cosmos wallet (LeapWallet) private key
+Create a cosmos wallet in Leap Wallet and export your wallet private key
 
 ![Screenshot_1](https://github.com/user-attachments/assets/876ae952-fb94-4f89-800d-6ca25631ca44)
 
