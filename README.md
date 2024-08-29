@@ -1,4 +1,4 @@
-# Guide: How to deploy a miner node on Nesa network testnet
+# Deploy a miner node on Nesa network testnet
 > Nesa is an L1 blockchain that allows developers to integrate any AI model to launch their own Dapp or blockchain rollup on its network.
 >
 > With its white paper, Nesa shows potential as a comprehensive blockchain platform for integrating AI models in the development of rollups and smart contracts.
