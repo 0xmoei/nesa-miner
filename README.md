@@ -71,8 +71,30 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 * **Wallet Private Key**: Enter your wallet private key for miner registration and to receive rewards.
 * Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before starting the miner.
 
+![image](https://github.com/user-attachments/assets/69540b5a-1461-41a4-8a20-6efe4d5686f7)
+
+## Useful commands
+
+### Check container logs
+```
+docker logs -f -n 100 orchestrator
+```
+```
+docker logs -f -n 100 ipfs_node
+```
+```
+docker logs -f -n 100 mongodb
+```
+
 ### Get node peer-id (wallet public key)
 ```console
 cat $HOME/.nesa/identity/node_id.id
 ```
+
+### Get node status url
+```
+PUB_KEY=$(cat $HOME/.nesa/identity/node_id.id)
+echo https://node.nesa.ai/nodes/$PUB_KEY
+```
+![image](https://github.com/user-attachments/assets/1c33ea05-6d59-4c7e-a061-76324b2e0134)
 
