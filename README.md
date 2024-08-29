@@ -5,37 +5,33 @@
 
 
 ## Install Dependecies
-### Install packages
+### Install dependecies
 ```console
-sudo apt install jq curl
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev -y
 ```
 ### Install Docker
 ```console
-sudo apt update -y && sudo apt upgrade -y
-for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
-
-sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-sudo apt update -y && sudo apt upgrade -y
+sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# Check version
 docker --version
 
 # Give permissions to docker
 sudo groupadd docker
 sudo usermod -aG docker $USER
-
-# Test Docker
-sudo docker run hello-world
 ```
 
 ## Obtain a Hugging Face API key
@@ -61,10 +57,13 @@ sudo ufw enable
 ```
 bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootstrap.sh)
 ```
+* Select amode: Choose **Wizardy**.
 * Choose a Moniker: Provide a unique name for your node.
-* Select Node Type: Decide whether your node will act as a Validator or Miner. See below for details on each type.
+* hostname: skip & press `Enter`
+* hostname: skip & press `Enter`
+* Enter Referral Code: `3A5MYLii7HTTG5CtTrUUWVoVJSwUqiEqFV6gbkHcJXJc`
+* Node Type: Select Miner
 * Provide Wallet Private Key: Enter your wallet private key for miner registration and to receive rewards.
-* Enter Referral Code (optional): If applicable, provide the referral code.
 * Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before proceeding.
 
 ### Get node peer-id (wallet public key)
