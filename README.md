@@ -1,4 +1,8 @@
-# nesa-miner
+# Guide: How to deploy a miner node on Nesa network testnet
+> Nesa is an L1 blockchain that allows developers to integrate any AI model to launch their own Dapp or blockchain rollup on its network.
+>
+> With its white paper, Nesa shows potential as a comprehensive blockchain platform for integrating AI models in the development of rollups and smart contracts.
+
 ## Hardware Requirement
 ![image](https://github.com/user-attachments/assets/fc99390f-66cf-4931-8aca-675597fa0db4)
 > GPU is not necessary and you can run your miner CPU-only
