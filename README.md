@@ -69,7 +69,7 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 * **Enter Referral Code**: `3A5MYLii7HTTG5CtTrUUWVoVJSwUqiEqFV6gbkHcJXJc`
 * **Node Type**: Select Miner.
 * **Wallet Private Key**: Enter your wallet private key for miner registration and to receive rewards.
-* Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before proceeding.
+* Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before starting the miner.
 
 ### Get node peer-id (wallet public key)
 ```console
