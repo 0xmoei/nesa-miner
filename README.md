@@ -45,12 +45,12 @@ sudo usermod -aG docker $USER
 
 5. Copy the generated key to use it in your miner installation.
 
-## Obtain LeapWallet privatekey
+## Step 3: Obtain LeapWallet privatekey
 We need a cosmos wallet (LeapWallet) private key
 
 ![Screenshot_1](https://github.com/user-attachments/assets/876ae952-fb94-4f89-800d-6ca25631ca44)
 
-##  Step 3: Open Ports
+##  Step 4: Open Ports
 ```console
 sudo ufw allow ssh
 sudo ufw allow 22
@@ -58,7 +58,7 @@ sudo ufw allow 31333
 sudo ufw enable
 ```
 
-##  Step 4: Install and run Nesa Miner
+##  Step 5: Install and run Nesa Miner
 ```
 bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootstrap.sh)
 ```
@@ -73,7 +73,7 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 
 ![image](https://github.com/user-attachments/assets/69540b5a-1461-41a4-8a20-6efe4d5686f7)
 
-##  Step 5: Useful commands
+##  Step 6: Useful commands
 
 ### Check container logs
 ```
