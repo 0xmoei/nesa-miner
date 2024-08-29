@@ -1,6 +1,8 @@
 # nesa-miner
 ## Hardware Requirement
-![Screenshot_1](https://github.com/user-attachments/assets/4c32d071-4969-434a-8d35-2ba8a0fdc0b4)
+![image](https://github.com/user-attachments/assets/fc99390f-66cf-4931-8aca-675597fa0db4)
+> GPU is not necessary and you can run your miner CPU-only
+
 
 ## Install Dependecies
 ### Install packages
@@ -47,7 +49,26 @@ sudo docker run hello-world
 
 5. Copy the generated key to use it in your miner installation.
 
+## Open Ports
+```console
+sudo ufw allow ssh
+sudo ufw allow 22
+sudo ufw allow 31333
+sudo ufw enable
+```
+
+## Install and run Nesa Miner
+```
+bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootstrap.sh)
+```
+* Choose a Moniker: Provide a unique name for your node.
+* Select Node Type: Decide whether your node will act as a Validator or Miner. See below for details on each type.
+* Provide Wallet Private Key: Enter your wallet private key for miner registration and to receive rewards.
+* Enter Referral Code (optional): If applicable, provide the referral code.
+* Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before proceeding.
+
 ### Get node peer-id (wallet public key)
 ```console
 cat $HOME/.nesa/identity/node_id.id
 ```
+
