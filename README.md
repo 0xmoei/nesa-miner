@@ -70,7 +70,7 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 * **Choose a Moniker**: Provide a unique name for your node.
 * **Node hostname**: skip & press `Enter`.
 * **Node email**: skip & press `Enter`.
-* **Enter Referral Code**: `3A5MYLii7HTTG5CtTrUUWVoVJSwUqiEqFV6gbkHcJXJc`
+* **Enter Referral Code**: `nesa1w8gv09dqv2fss8h7s92ye7e8afts608d9pyw65`
 * **Node Type**: Select Miner.
 * **Wallet Private Key**: Enter your wallet private key for miner registration and to receive rewards.
 * Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before starting the miner.
@@ -81,14 +81,15 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 
 ### Check container logs
 ```
-docker logs -f -n 100 orchestrator
+docker logs -f orchestrator
 ```
 ```
-docker logs -f -n 100 ipfs_node
+docker logs -f mongodb
 ```
 ```
-docker logs -f -n 100 mongodb
+docker logs -f ipfs_node
 ```
+
 
 ### Get node peer-id (wallet public key)
 ```console
