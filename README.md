@@ -71,7 +71,6 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 * **Node hostname**: skip & press `Enter`.
 * **Node email**: skip & press `Enter`.
 * **Enter Referral Code: to get bonus points**: `nesa1w8gv09dqv2fss8h7s92ye7e8afts608d9pyw65`
-* **Node Type**: Select Miner.
 * **Wallet Private Key**: Enter your wallet private key for miner registration and to receive rewards.
 * Finalize Configuration: Review and confirm the configuration before starting your node. The bootstrap script will provide a summary of your configuration and allow you to make changes before starting the miner.
 
