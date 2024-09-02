@@ -85,10 +85,11 @@ docker logs -f orchestrator
 ```
 docker logs -f mongodb
 ```
-```
-docker logs -f ipfs_node
-```
 
+Check Containers: You must have 4 new containers now
+```
+docker ps
+```
 
 ### Get node peer-id (wallet public key)
 ```console
