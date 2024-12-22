@@ -80,10 +80,10 @@ bash <(curl -s https://raw.githubusercontent.com/nesaorg/bootstrap/master/bootst
 
 ### Check container logs
 ```
-docker logs -f orchestrator
+docker logs -fn 100 orchestrator
 ```
 ```
-docker logs -f mongodb
+docker logs -fn 100 mongodb
 ```
 
 Check Containers: You must have 4 new containers now
